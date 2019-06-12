@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script language="javascript">
+    let numbers=prompt("số lượng số nguyên tố cần in ra.");
+    let count=0;
+    let N=2;
+    let ketqua='3';
+    let kiemtra=false;
+    function kientrasonguyento() {
+        while (count<numbers){
+            for (var i=2;i<(N-1);i++){
+                if (N%i==0){
+                    kiemtra=false;
+                    break;
+                }
+                kiemtra=true;
+            }
+
+            if(kiemtra)
+            {
+                ketqua=ketqua+','+N;
+                count++;
+            }
+            N++}}
+    kientrasonguyento();
+    alert(ketqua);
+</script>
+</body>
+</html>
